@@ -3,7 +3,7 @@ const app = express();
 
 const sequelize = require('./config/db');
 
-sequelize.sync({ force: true })
+sequelize.sync()
   .then(() => {
     console.log(`Database & tables created!`)
   });
